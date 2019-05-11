@@ -1,7 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is basically my implementation of the blog app documented at 
+https://guides.rubyonrails.org/getting_started.html
+
+I am using it as a testbed to learn Rails+Ruby
+
 
 Things you may want to cover:
 
