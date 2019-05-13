@@ -2,4 +2,4 @@
 enrico:
   name: testuser1
   email: testuser1@test.com
-  password_digest: <%= User.digest('password')
+  password_digest: <%= User.digest('password') %>
