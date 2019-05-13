@@ -10,6 +10,16 @@
   </head>
 
   <body>
+    <% flash.each do |message_type, message|%>
+      <h1><%= message %></h1>    
+    <% end %>
+    <% if logged_in? %>
+      <%= link_to "Profile", current_user %>
+      <%= link_to "Log Out", logout_path, method: :delete %>
+    <% else %>
+      <%= link_to "Log In", login_path %>
+    <% end %>
     <%= yield %>
+    <%= debug(params) if Rails.env.development? %>
   </body>
 </html>

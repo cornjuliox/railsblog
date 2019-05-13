@@ -7,6 +7,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       flash[:success] = 'Success! New account created.'
+      helpers.log_in @user
       redirect_to @user
     else
       flash[:error] = 'Error! Please check the form and try again.'

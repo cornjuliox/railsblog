@@ -1,0 +1,14 @@
+<%= form_with(scope: :session, local: true, url: login_path) do |form| %>
+    <p>
+        <%= form.label :email %>
+        <%= form.email_field :email %>
+    </p>
+    <p>
+        <%= form.label :password %>
+        <%= form.password_field :password %>
+    </p>
+    <p>
+        <%= form.submit "Log in" %>
+    </p>
+<% end %>
+<p>New user? <%= link_to "Sign up now!", new_user_path %></p>
